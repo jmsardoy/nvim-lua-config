@@ -17,8 +17,9 @@ telescope.setup {
       i = {
         --["<C-n>"] = actions.cycle_history_next,
         --["<C-p>"] = actions.cycle_history_prev,
-        ["<C-p>"] = actions.close, --custom added, bind to settings in keymaps.lua
-        ["<C-l>"] = actions.close, --custom added, bind to settings in keymaps.lua
+        ["<Leader>f"] = actions.close, --custom added, bind to settings in whichkey.lua
+        ["<Leader>F"] = actions.close, --custom added, bind to settings in whichkey.lua
+        ["<Leader>b"] = actions.close, --custom added, bind to settings in whichkey.lua
 
         ["<C-j>"] = actions.move_selection_next,
         ["<C-k>"] = actions.move_selection_previous,
@@ -48,8 +49,9 @@ telescope.setup {
       },
 
       n = {
-        ["<C-p>"] = actions.close, --custom added, bind to settings in keymaps.lua
-        ["<C-l>"] = actions.close, --custom added, bind to settings in keymaps.lua
+        ["<Leader>f"] = actions.close, --custom added, bind to settings in whichkey.lua
+        ["<Leader>F"] = actions.close, --custom added, bind to settings in whichkey.lua
+        ["<Leader>b"] = actions.close, --custom added, bind to settings in whichkey.lua
 
         ["<esc>"] = actions.close,
         ["<CR>"] = actions.select_default,

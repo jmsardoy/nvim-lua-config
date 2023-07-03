@@ -1,1 +1,1 @@
-NVIM config in lua
+NVIM config in lua.

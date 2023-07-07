@@ -32,4 +32,3 @@ comment.setup {
     }
   end,
 }
-

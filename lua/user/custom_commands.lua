@@ -19,8 +19,8 @@ set_abbreviation("Q", "q")
 set_abbreviation("Qall", "qall")
 
 -- Format command
-create_command("Format", "lua vim.lsp.buf.format()", {})
-set_abbreviation("format", "Format")
+-- create_command("Format", "lua vim.lsp.buf.format()", {})
+-- set_abbreviation("format", "Format")
 
 -- Global defined functions in toggle term
 set_abbreviation("htop", "lua _HTOP_TOGGLE()")

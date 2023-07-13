@@ -84,7 +84,7 @@ local mappings = {
   --   "Buffers",
   -- },
   ["b"] = { "<cmd>Telescope buffers<cr>", "Buffers"},
-  ["f"] = { "<cmd>Telescope find_files<cr>", "find_files"},
+  ["f"] = { "<cmd>Telescope find_files hidden=true<cr>", "find_files"},
   ["F"] = { "<cmd>Telescope live_grep<cr>", "live_grep"},
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   ["x"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
@@ -133,7 +133,7 @@ local mappings = {
       "<cmd>Telescope diagnostics<cr>",
       "Workspace Diagnostics",
     },
-    f = { "<cmd>lua vim.lsp.buf.format{async=true}<cr>", "Format" },
+    f = { "<cmd>lua vim.lsp.buf.formatting()<cr>", "Format" },
     i = { "<cmd>LspInfo<cr>", "Info" },
     I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },
     j = {

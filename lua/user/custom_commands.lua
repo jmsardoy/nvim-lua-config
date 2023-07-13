@@ -27,3 +27,5 @@ set_abbreviation("htop", "lua _HTOP_TOGGLE()")
 set_abbreviation("python", "lua _PYTHON_TOGGLE()")
 set_abbreviation("ipython", "lua _IPYTHON_TOGGLE()")
 set_abbreviation("ncdu", "lua _NCDU_TOGGLE()")
+
+set_abbreviation("format", "lua vim.lsp.buf.formatting()")

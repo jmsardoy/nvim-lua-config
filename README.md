@@ -11,3 +11,13 @@ Installation:
 
 * Install ripgrep for fuzzy finder
   - sudo apt-get install ripgrep
+
+* LspInstall
+  - pylsp
+  - pyright
+  - Formatters:
+    - black
+    - isort
+  - linters:
+    - flake8
+    - mypy

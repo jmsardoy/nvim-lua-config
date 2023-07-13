@@ -15,6 +15,6 @@ require "user.lualine"
 require "user.impatient"
 require "user.whichkey"
 
--- require "user.treesitter"
+require "user.treesitter"
 -- require "user.indentline"
 -- require "user.autocommands"

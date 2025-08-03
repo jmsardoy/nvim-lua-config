@@ -1,3 +1,4 @@
+vim.loader.enable()
 require "user.options"
 require "user.keymaps"
 require "user.custom_commands"
@@ -12,9 +13,7 @@ require "user.nvim-tree"
 require "user.bufferline"
 require "user.toggleterm"
 require "user.lualine"
-require "user.impatient"
 require "user.whichkey"
-
 require "user.treesitter"
--- require "user.indentline"
+require "user.ts-autotag"
 -- require "user.autocommands"

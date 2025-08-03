@@ -9,6 +9,7 @@ if not snip_status_ok then
 end
 
 require("luasnip/loaders/from_vscode").lazy_load()
+require("codeium").setup({})
 
 local check_backspace = function()
   local col = vim.fn.col "." - 1
@@ -17,9 +18,9 @@ end
 
 --   פּ ﯟ   some other good icons
 local kind_icons = {
-  Text = "",
+  Text = "󰊄",
   Method = "m",
-  Function = "",
+  Function = "󰡱",
   Constructor = "",
   Field = "",
   Variable = "",
@@ -101,6 +102,7 @@ cmp.setup {
       vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
       -- vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
+        codeium = "[Codeium]",
         nvim_lsp = "[LSP]",
         nvim_lua = "[NVIM_LUA]",
         luasnip = "[Snippet]",
@@ -113,6 +115,7 @@ cmp.setup {
   sources = {
     { name = "nvim_lua" },
     { name = "nvim_lsp" },
+    { name = "codeium" },
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },

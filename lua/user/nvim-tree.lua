@@ -66,6 +66,9 @@ nvim_tree.setup {
       },
     },
   },
+  filters = {
+    custom = {"^.null-ls"}
+  },
 }
 
 -- -- Auto Open

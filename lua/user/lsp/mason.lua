@@ -1,12 +1,19 @@
 local servers = {
-	"sumneko_lua",
-	-- "cssls",
-	-- "html",
-	-- "tsserver",
+  "vtsls",
 	"pyright",
-	-- "bashls",
 	"jsonls",
-	-- "yamlls",
+  "ruff_lsp",
+}
+
+local tools = {
+  "pyright",
+  "mypy",
+  "eslint",
+  "eslint_d",
+  "prettierd",
+  "isort",
+  "ruff",
+  "stylua",
 }
 
 local settings = {
@@ -27,6 +34,7 @@ require("mason-lspconfig").setup({
 	ensure_installed = servers,
 	automatic_installation = true,
 })
+require("mason-tool-installer").setup({ ensure_installed = tools})
 
 local lspconfig_status_ok, lspconfig = pcall(require, "lspconfig")
 if not lspconfig_status_ok then

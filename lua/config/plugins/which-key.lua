@@ -59,9 +59,9 @@ local mappings = {
 
   -- lsp
   { "gd" , "<cmd>lua vim.lsp.buf.definition()<cr>", desc = "Go to Definition", nowait = true, remap = false },
-  { "gd" , "<cmd>lua vim.lsp.buf.declaration()<cr>", desc = "Go to Declaration", nowait = true, remap = false },
+  { "gD" , "<cmd>lua vim.lsp.buf.declaration()<cr>", desc = "Go to Declaration", nowait = true, remap = false },
   { "gr" , "<cmd>lua vim.lsp.buf.references()<cr>", desc = "Go to References", nowait = true, remap = false },
-  { "gl" , "<cmd>lua vim.diagnostic.open_float()<cr>", desc = "Go to References", nowait = true, remap = false },
+  { "gl" , "<cmd>lua vim.diagnostic.open_float()<cr>", desc = "Open Diagnostics Float", nowait = true, remap = false },
 
 
 }

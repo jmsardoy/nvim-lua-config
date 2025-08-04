@@ -1,12 +1,4 @@
-local cmp_status_ok, cmp = pcall(require, "cmp")
-if not cmp_status_ok then
-  return
-end
-
-local snip_status_ok, luasnip = pcall(require, "luasnip")
-if not snip_status_ok then
-  return
-end
+local cmp = require("cmp")
 
 require("luasnip/loaders/from_vscode").lazy_load()
 
@@ -17,9 +9,9 @@ end
 
 --   פּ ﯟ   some other good icons
 local kind_icons = {
-  Text = "",
+  Text = "󰊄",
   Method = "m",
-  Function = "",
+  Function = "󰡱",
   Constructor = "",
   Field = "",
   Variable = "",
@@ -131,3 +123,4 @@ cmp.setup {
     native_menu = false,
   },
 }
+

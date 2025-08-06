@@ -16,7 +16,7 @@ The configuration is organized in the `lua/config/` directory with these key fil
 - `lazy.lua` - Bootstrap and setup Lazy.nvim plugin manager
 - `options.lua` - Neovim options and settings (indentation, display, behavior)
 - `keymaps.lua` - Custom key mappings and shortcuts
-- `plugins_config.lua` - Loads all plugin configurations
+- `plugins/` - Plugin configuration module (loads all plugin configurations)
 - `custom_commands.lua` - User-defined commands
 - `diagnostic_signs.lua` - LSP diagnostic symbols and signs
 
@@ -38,7 +38,8 @@ Plugin specifications are defined in separate files in `lua/plugins/`:
 - `which-key.lua` - Key binding hints
 
 ### Plugin Configuration (`lua/config/plugins/`)
-Individual plugin configurations are stored in `lua/config/plugins/`:
+Individual plugin configurations are stored in `lua/config/plugins/` and loaded via `init.lua`:
+- `init.lua` - Main module loader for all plugin configurations
 - `bufferline.lua` - Buffer line/tab configuration
 - `cmp.lua` - Completion engine setup
 - `comment.lua` - Comment plugin configuration
